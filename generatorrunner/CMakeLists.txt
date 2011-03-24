@@ -4,10 +4,11 @@ find_package(ApiExtractor 0.9.5 REQUIRED)
 find_package(GeneratorRunner 0.6.7 REQUIRED)
 set(LIBRARY_NAME "generatorrunner")
 
+set(GeneratorRunner_VERSION "stable")
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/${LIBRARY_NAME}-acc.xml.in"
                "${CMAKE_CURRENT_BINARY_DIR}/${LIBRARY_NAME}-acc.xml" @ONLY)
 
-set(GeneratorRunner_VERSION "${GeneratorRunner_VERSION}-dev")
+set(GeneratorRunner_VERSION "devel")
 set(GENERATORRUNNER_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/reference/include/${LIBRARY_NAME}")
 set(GENERATORRUNNER_LIBRARY "${CMAKE_SOURCE_DIR}/reference/lib/${CMAKE_SYSTEM_PROCESSOR}/libgenrunner.so")
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/${LIBRARY_NAME}-acc.xml.in"

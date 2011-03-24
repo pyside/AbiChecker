@@ -8,10 +8,11 @@ find_package(PythonLibs)
 
 set(LIBRARY_NAME "pyside")
 
+set(PySide_VERSION "stable")
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/${LIBRARY_NAME}-acc.xml.in"
                "${CMAKE_CURRENT_BINARY_DIR}/${LIBRARY_NAME}-acc.xml" @ONLY)
 
-set(PySide_VERSION "${PySide_VERSION}-dev")
+set(PySide_VERSION "devel")
 set(PYSIDE_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/reference/include/${LIBRARY_NAME}")
 set(PYSIDE_LIBRARY "${CMAKE_SOURCE_DIR}/reference/lib/${CMAKE_SYSTEM_PROCESSOR}/lib${LIBRARY_NAME}-${SHIBOKEN_PYTHON_BASENAME}.so")
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/${LIBRARY_NAME}-acc.xml.in"
