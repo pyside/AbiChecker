@@ -1,0 +1,23 @@
+<version>
+    @GeneratorRunner_VERSION@
+</version>
+
+<headers>
+    @GENERATORRUNNER_INCLUDE_DIR@/generatorrunnermacros.h
+    @GENERATORRUNNER_INCLUDE_DIR@/generator.h
+</headers>
+
+<libs>
+    @GENERATORRUNNER_LIBRARY@
+</libs>
+
+<include_paths>
+    @GENERATORRUNNER_INCLUDE_DIR@
+    @APIEXTRACTOR_INCLUDE_DIR@
+    @QT_INCLUDE_DIR@
+    @QT_QTCORE_INCLUDE_DIR@
+</include_paths>
+
+<gcc_options>
+    -Wall -fvisibility=hidden
+</gcc_options>

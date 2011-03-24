@@ -1,0 +1,32 @@
+<version>
+    @Shiboken_VERSION@
+</version>
+
+<headers>
+    @SHIBOKEN_INCLUDE_DIR@/threadstatesaver.h
+    @SHIBOKEN_INCLUDE_DIR@/bindingmanager.h
+    @SHIBOKEN_INCLUDE_DIR@/sbkenum.h
+    @SHIBOKEN_INCLUDE_DIR@/typeresolver.h
+    @SHIBOKEN_INCLUDE_DIR@/conversions.h
+    @SHIBOKEN_INCLUDE_DIR@/basewrapper.h
+    @SHIBOKEN_INCLUDE_DIR@/autodecref.h
+    @SHIBOKEN_INCLUDE_DIR@/gilstate.h
+    @SHIBOKEN_INCLUDE_DIR@/helper.h
+</headers>
+
+<libs>
+    @SHIBOKEN_LIBRARY@
+</libs>
+
+<include_paths>
+    @SHIBOKEN_INCLUDE_DIR@
+    @GENERATORRUNNER_INCLUDE_DIR@
+    @APIEXTRACTOR_INCLUDE_DIR@
+    @QT_INCLUDE_DIR@
+    @QT_QTCORE_INCLUDE_DIR@
+    @PYTHON_INCLUDE_PATH@
+</include_paths>
+
+<gcc_options>
+    -Wall -fvisibility=hidden
+</gcc_options>

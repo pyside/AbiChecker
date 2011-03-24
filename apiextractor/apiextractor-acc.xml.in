@@ -1,0 +1,31 @@
+<version>
+    @ApiExtractor_VERSION@
+</version>
+
+<headers>
+    @APIEXTRACTOR_INCLUDE_DIR@/abstractmetalang.h
+    @APIEXTRACTOR_INCLUDE_DIR@/apiextractor.h
+    @APIEXTRACTOR_INCLUDE_DIR@/apiextractormacros.h
+    @APIEXTRACTOR_INCLUDE_DIR@/docparser.h
+    @APIEXTRACTOR_INCLUDE_DIR@/fileout.h
+    @APIEXTRACTOR_INCLUDE_DIR@/graph.h
+    @APIEXTRACTOR_INCLUDE_DIR@/include.h
+    @APIEXTRACTOR_INCLUDE_DIR@/qtdocparser.h
+    @APIEXTRACTOR_INCLUDE_DIR@/reporthandler.h
+    @APIEXTRACTOR_INCLUDE_DIR@/typedatabase.h
+    @APIEXTRACTOR_INCLUDE_DIR@/typesystem.h
+</headers>
+
+<libs>
+    @APIEXTRACTOR_LIBRARY@
+</libs>
+
+<include_paths>
+    @APIEXTRACTOR_INCLUDE_DIR@
+    @QT_INCLUDE_DIR@
+    @QT_QTCORE_INCLUDE_DIR@
+</include_paths>
+
+<gcc_options>
+    -Wall -fvisibility=hidden
+</gcc_options>

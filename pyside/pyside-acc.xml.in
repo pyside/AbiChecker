@@ -1,0 +1,31 @@
+<version>
+    @PySide_VERSION@
+</version>
+
+<headers>
+    @PYSIDE_INCLUDE_DIR@/pysidesignal.h
+    @PYSIDE_INCLUDE_DIR@/pysidemacros.h
+    @PYSIDE_INCLUDE_DIR@/globalreceiver.h
+    @PYSIDE_INCLUDE_DIR@/pysideconversions.h
+    @PYSIDE_INCLUDE_DIR@/pyside.h
+    @PYSIDE_INCLUDE_DIR@/pysidemetafunction.h
+    @PYSIDE_INCLUDE_DIR@/signalmanager.h
+    @PYSIDE_INCLUDE_DIR@/dynamicqmetaobject.h
+    @PYSIDE_INCLUDE_DIR@/pysideproperty.h
+</headers>
+
+<libs>
+    @PYSIDE_LIBRARY@
+</libs>
+
+<include_paths>
+    @PYSIDE_INCLUDE_DIR@
+    @SHIBOKEN_INCLUDE_DIR@
+    @PYTHON_INCLUDE_PATH@
+    @QT_INCLUDE_DIR@
+    @QT_QTCORE_INCLUDE_DIR@    
+</include_paths>
+
+<gcc_options>
+    -Wall -fvisibility=hidden
+</gcc_options>
