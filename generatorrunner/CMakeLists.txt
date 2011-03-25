@@ -21,3 +21,11 @@ add_custom_target(abi_generatorrunner_check ALL
     SOURCES    ${CMAKE_CURRENT_BINARY_DIR}/${LIBRARY_NAME}-acc.xml ${CMAKE_CURRENT_BINARY_DIR}/${LIBRARY_NAME}-acc-dev.xml
 )
 
+
+add_custom_target(abi_generatorrunner_result_check
+    COMMAND    ${ABI_CHECKER_RESULT_TOOL} compat_reports/genrunner/stable_to_devel/abi_compat_report.html
+    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+    COMMENT    "Check ${LIBRARY_NAME} ABI compatilbe result..."
+)
+
+add_dependencies(result_check abi_generatorrunner_result_check)

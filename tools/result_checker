@@ -1,0 +1,18 @@
+#!/usr/bin/python
+import sys
+
+if len(sys.argv) != 2:
+    print 'Usage: result_checker <html_result_file>'
+    sys.exit(2)
+
+infile = open(sys.argv[1],'r')
+text = infile.read()
+infile.close()
+
+index = text.find('<b>Compatible</b>')
+if index == -1:
+    print 'NOT COMPATIBLE'
+    sys.exit(1)
+else:
+    print 'COMPATIBLE'
+    sys.exit(0)
